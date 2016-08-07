@@ -41,12 +41,9 @@ public class CharacterMove : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-
-        // 이동 속도 velocity를 갱신한다.
         if (characterController.isGrounded) {
-            // 수평면에서 이동을 고려하므로 XZ만 다룬다.
-            Vector3 destinationXZ = destination;
             // 목적지와 현재 위치 높이를 똑같이 한다.
+            Vector3 destinationXZ = destination;
             destinationXZ.y = transform.position.y;
 
             //********* 여기서부터 XZ만으로 생각한다. ********
@@ -60,7 +57,6 @@ public class CharacterMove : MonoBehaviour {
             //　목적지에 가까이 왔으면 도착.
             if (arrived || distance < StoppingDistance)
                 arrived = true;
-
 
             // 이동 속도를 구한다.
             if (arrived)
