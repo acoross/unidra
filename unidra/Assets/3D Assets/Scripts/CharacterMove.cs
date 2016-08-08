@@ -36,7 +36,7 @@ public class CharacterMove : MonoBehaviour {
     // Use this for initialization
     void Start() {
         characterController = GetComponent<CharacterController>();
-        //destination = transform.position;
+        destination = transform.position;
     }
 
     // Update is called once per frame
@@ -82,7 +82,6 @@ public class CharacterMove : MonoBehaviour {
                 Quaternion characterTargetRotation = Quaternion.LookRotation(forceRotateDirection);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, characterTargetRotation, rotationSpeed * Time.deltaTime);
             }
-            Debug.Log("rotation");
         }
 
         // 중력.
@@ -97,7 +96,6 @@ public class CharacterMove : MonoBehaviour {
         // CharacterController를 사용해서 움직인다.
         //characterController.Move(new Vector3(0.1f, 0.1f, 0.1f));
         characterController.Move(velocity * Time.deltaTime + snapGround);
-        Debug.Log("move: " + (velocity * Time.deltaTime).ToString());
 
         if (characterController.velocity.magnitude < 0.1f)
             arrived = true;
@@ -105,8 +103,6 @@ public class CharacterMove : MonoBehaviour {
         // 강제로 방향 변경을 해제한다.
         if (forceRotate && Vector3.Dot(transform.forward, forceRotateDirection) > 0.99f)
             forceRotate = false;
-
-
     }
 
     // 목적지를 설정한다. 인수 destination은 목적지.
