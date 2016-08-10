@@ -1,15 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CharaAnimation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/3D Assets/Scripts/CharacterMove.cs">
     <Files>
-      <File FileName="Assets/3D Assets/Scripts/CharacterMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/3D Assets/Scripts/CharacterMove.cs" Line="18" Column="2" />
       <File FileName="Assets/3D Assets/Scripts/CharacterStatus.cs" Line="5" Column="21" />
       <File FileName="Assets/3D Assets/Scripts/InputManager.cs" Line="1" Column="1" />
       <File FileName="Assets/MoveCamera.cs" Line="1" Column="1" />
       <File FileName="Assets/MoveRigitObject.cs" Line="1" Column="1" />
       <File FileName="Assets/3D Assets/Scripts/FollowCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets/3D Assets/Scripts/PlayerCtrl.cs" Line="1" Column="1" />
-      <File FileName="Assets/CharaAnimation.cs" Line="21" Column="22" />
+      <File FileName="Assets/3D Assets/Scripts/PlayerCtrl.cs" Line="13" Column="9" />
+      <File FileName="Assets/3D Assets/Scripts/HitArea.cs" Line="11" Column="1" />
+      <File FileName="Assets/3D Assets/Scripts/AttackArea.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
